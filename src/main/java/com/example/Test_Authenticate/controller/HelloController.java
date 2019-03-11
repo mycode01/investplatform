@@ -1,0 +1,23 @@
+package com.example.Test_Authenticate.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+
+    @GetMapping("/hello")
+    public String hello(String name){
+        return "hello "+name;
+    }
+
+    @GetMapping("/admin")
+    public String admin(){
+        return "admin page";
+    }
+
+    @GetMapping("/user")
+    public String user(){
+        return "user";
+    }
+}
