@@ -6,6 +6,7 @@
 일부 API는 DTO가 아니라 도메인객체를 따로 생성해 사용하였는데, 큰 이유는 없고 api request시에 Validate를 좀 편하게 하고 싶어서 그리하였음    
 api마다 DO를 작성해야하는 불편함은 있지만 Validate가 편하고, 코드가 깔끔해짐    
 물론 MSA 프로젝트에서는 큰 장점이 될것임    
+DI를 이용한 패턴을 쓰기보다는 기억하고있는 비지니스 흐름을 그리는데 집중하고싶었음 그러다보니 추상화를 전혀 신경쓰지못함.. 반성    
 분명 나중에 기억이 전혀 안 날것이기 때문에 swagger ui를 붙여두었음    
 비지니스 흐름도는    
 member/create > member/login > /account ? account/deposit > /invest (/fund가 선행되어야함)
